@@ -1,0 +1,118 @@
+.document-packages{
+    margin-bottom: 80px;
+    font-family: Circe;
+}
+.document-packages__title{
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #333333;
+    margin-bottom: 60px;
+}
+.document-packages__body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+.document-packages__item{
+    background: #F6F6F6;
+    border-radius: 8px;
+    padding: 20px 30px;
+    height: fit-content;
+}
+.document-packages__name{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 25px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+.document-packages ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.document-packages li{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.document-packages li:before{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    background-color: #EB292F;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.document-packages li a{
+    color: #EB292F;
+    text-decoration: none;
+}
+@media (max-width: 1023px) {
+    .document-packages{
+        margin-bottom: 40px;
+    }
+    .document-packages__title{
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+    .document-packages__item{
+        padding: 18px 16px;
+    }
+    .document-packages__name{
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    .document-packages li{
+        padding-left: 20px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    .document-packages li:before{
+        top: 5px;
+        width: 10px;
+        height: 10px;
+    }
+}
+@media (max-width: 767px) {
+    .document-packages{
+        margin-bottom: 20px;
+
+    }
+    .document-packages__scroll{
+        overflow-x: auto;
+    }
+    .document-packages__title{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    .document-packages__body{
+        display: grid;
+        grid-template-columns: minmax(252px, 1fr) minmax(252px, 1fr);
+        grid-gap: 10px;
+    }
+    .document-packages li{
+        padding-left: 15px;
+        margin-bottom: 10px;
+    }
+    .document-packages li:before{
+        top: 6px;
+        width: 7px;
+        height: 7px;
+    }
+}

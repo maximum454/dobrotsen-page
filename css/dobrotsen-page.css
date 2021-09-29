@@ -1,0 +1,74 @@
+.dobrotsen-page{
+    font-family: Circe;
+    position: relative;
+}
+.dobrotsen-page__body{
+    display: grid;
+    grid-template-columns: 1fr 561px;
+}
+.dobrotsen-page__txt{
+    max-width: 785px;
+    width: 100%;
+    position: relative;
+}
+.dobrotsen-page__title{
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #333333;
+}
+.dobrotsen-page__subtitle{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    border-left: 5px solid #EB292F;
+    padding-left: 27px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.dobrotsen-page__subtitle--big-size{
+    font-size: 40px;
+    line-height: 44px;
+}
+.dobrotsen-page__txt p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}
+.dobrotsen-page__txt b{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333333;
+}
+.dobrotsen-page__img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.dobrotsen-page__img img{
+
+}
+@media (max-width: 1023px) {
+    .dobrotsen-page__body{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .dobrotsen-page__img{
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .dobrotsen-page__subtitle{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 18px;
+    }
+}

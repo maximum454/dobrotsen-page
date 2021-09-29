@@ -1,0 +1,54 @@
+.country-work{
+    font-family: Circe;
+    margin-bottom: 110px;
+}
+.country-work__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #333333;
+    margin-bottom: 24px;
+}
+.country-work__body{
+    display: flex;
+}
+.country-work__content{
+    max-width: 612px;
+}
+.country-work__map{}
+.country-work__map img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.country-work__list{
+    list-style: none;
+    margin: 0 0 30px;
+    padding: 0;
+    columns: 2;
+}
+.country-work__item{}
+.country-work__name{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333333;
+}
+.country-work__anons{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+}
+
+@media (max-width: 1023px) {
+
+}
+@media (max-width: 767px) {
+    .country-work__body{
+        flex-wrap: wrap;
+    }
+}

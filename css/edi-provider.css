@@ -1,0 +1,97 @@
+.edi-provider{
+    max-width: 785px;
+    font-family: Circe;
+    margin-bottom: 80px;
+}
+.edi-provider__title{
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+.edi-provider__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.edi-provider__item{
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #D1D1D1;
+}
+.edi-provider__item.active .edi-provider__name:after{
+    content: '';
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background-image: url("../img/edi-provider-close.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 12px;
+    height: 12px;
+}
+.edi-provider__item.active .edi-provider__anons{
+    display: block;
+}
+.edi-provider__name{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    position: relative;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.edi-provider__name:after{
+    content: '';
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background-image: url("../img/edi-provider-open.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 12px;
+    height: 12px;
+}
+.edi-provider__anons{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    display: none;
+}
+.edi-provider__anons a{
+    color: #EB292F;
+    text-decoration: none;
+    line-height: 20px;
+}
+
+@media (max-width: 1023px) {
+    .edi-provider{
+        margin-bottom: 40px;
+    }
+    .edi-provider__title{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .edi-provider__name{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media (max-width: 767px) {
+    .edi-provider{
+        margin-bottom: 20px;
+    }
+    .edi-provider__title{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
