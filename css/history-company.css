@@ -24,6 +24,12 @@
     line-height: 20px;
     color: #333333;
 }
+.history-company__year{
+    display: none;
+}
+.history-company__caption{
+    display: none;
+}
 .history-company__slider{
     width: 100%;
     max-width: 640px;
@@ -89,7 +95,7 @@
     background-position: center;
     width: 60px;
     height: 60px;
-    left: -60px;
+    left: 0;
 }
 .history-company .swiper-button-next{
     background-image: url("../img/slider-arrow.svg");
@@ -103,6 +109,9 @@
 }
 .history-company .swiper-button-prev:after,
 .history-company .swiper-button-next:after{
+    display: none;
+}
+.history-company .swiper-pagination{
     display: none;
 }
 @media (max-width: 1023px) {
@@ -131,4 +140,52 @@
     .history-company__nav{
         display: none;
     }
+    .history-company__year{
+        display: block;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #333333;
+        margin: 10px auto;
+    }
+    .history-company__caption{
+        display: block;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #333333;
+    }
+    .history-company__slider{
+        max-width: 340px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .history-company .swiper-button-prev{
+        width: 25px;
+        height: 25px;
+        left: 25px;
+        top: 40%;
+    }
+    .history-company .swiper-button-next{
+        width: 25px;
+        height: 25px;
+        right: 25px;
+        top: 40%;
+    }
+    .history-company .swiper-pagination{
+        display: block;
+        position: relative;
+        bottom: 0;
+    }
+    .history-company  .swiper-pagination-bullet{
+        background-color: #F6F6F6;
+    }
+    .history-company  .swiper-pagination-bullet-active{
+        background-color: #EB292F;
+    }
+
 }

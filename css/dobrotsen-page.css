@@ -2,6 +2,9 @@
     font-family: Circe;
     position: relative;
 }
+.dobrotsen-page--about{
+    margin-bottom: 110px;
+}
 .dobrotsen-page__body{
     display: grid;
     grid-template-columns: 1fr 561px;
@@ -57,6 +60,9 @@
 
 }
 @media (max-width: 1023px) {
+    .dobrotsen-page--about{
+        margin-bottom: 40px;
+    }
     .dobrotsen-page__body{
         display: grid;
         grid-template-columns: 1fr;

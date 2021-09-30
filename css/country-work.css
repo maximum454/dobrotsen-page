@@ -15,8 +15,11 @@
 }
 .country-work__content{
     max-width: 612px;
+    flex: 1 1 0;
 }
-.country-work__map{}
+.country-work__map{
+    flex: 1 1 0;
+}
 .country-work__map img{
     max-width: 100%;
     height: auto;
@@ -70,6 +73,7 @@
     }
     .country-work__body{
         flex-wrap: wrap;
+        flex-direction: column;
     }
     .country-work__title{
         font-size: 16px;

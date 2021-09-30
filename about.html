@@ -58,7 +58,7 @@
 <body>
 <div class="content">
     <div class="wrapper">
-        <section class="dobrotsen-page">
+        <section class="dobrotsen-page dobrotsen-page--about">
             <div class="dobrotsen-page__body">
                 <div class="dobrotsen-page__txt">
                     <h1 class="h1">О компании</h1>
@@ -253,28 +253,44 @@
                     </div>
                 </div>
                 <div class="history-company__slider">
-                    <div>
                         <div class="swiper swiper-history-company">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="./img/history-company-img.png" width="640"
-                                                               height="361" alt=""></div>
-                                <div class="swiper-slide"><img src="./img/history-company-img.png" width="640"
-                                                               height="361" alt=""></div>
-                                <div class="swiper-slide"><img src="./img/history-company-img.png" width="640"
-                                                               height="361" alt=""></div>
-                                <div class="swiper-slide"><img src="./img/history-company-img.png" width="640"
-                                                               height="361" alt=""></div>
-                                <div class="swiper-slide"><img src="./img/history-company-img.png" width="640"
-                                                               height="361" alt=""></div>
-                                <div class="swiper-slide"><img src="./img/history-company-img.png" width="640"
-                                                               height="361" alt=""></div>
+                                <div class="swiper-slide">
+                                    <img src="./img/history-company-img.png" width="640" height="361" alt="">
+                                    <div class="history-company__year">2021</div>
+                                    <div class="history-company__caption">6 августа 2021 года - Доброцен насчитывает более 400 магазинов в трех странах.</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/history-company-img.png" width="640" height="361" alt="">
+                                    <div class="history-company__year">2021</div>
+                                    <div class="history-company__caption">6 августа 2021 года - Доброцен насчитывает более 400 магазинов в трех странах.</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/history-company-img.png" width="640" height="361" alt="">
+                                    <div class="history-company__year">2021</div>
+                                    <div class="history-company__caption">6 августа 2021 года - Доброцен насчитывает более 400 магазинов в трех странах.</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/history-company-img.png" width="640" height="361" alt="">
+                                    <div class="history-company__year">2021</div>
+                                    <div class="history-company__caption">6 августа 2021 года - Доброцен насчитывает более 400 магазинов в трех странах.</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/history-company-img.png" width="640" height="361" alt="">
+                                    <div class="history-company__year">2021</div>
+                                    <div class="history-company__caption">6 августа 2021 года - Доброцен насчитывает более 400 магазинов в трех странах.</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/history-company-img.png" width="640" height="361" alt="">
+                                    <div class="history-company__year">2021</div>
+                                    <div class="history-company__caption">6 августа 2021 года - Доброцен насчитывает более 400 магазинов в трех странах.</div>
+                                </div>
                             </div>
                             <div class="swiper-pagination"></div>
 
                         </div>
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
-                    </div>
                 </div>
             </div>
             <div class="history-company__nav">
@@ -346,6 +362,10 @@
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
         },
         thumbs: {
             swiper: swiperNav,
