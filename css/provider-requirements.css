@@ -61,6 +61,8 @@
         line-height: 24px;
         margin-bottom: 5px;
     }
+
+
 }
 @media (max-width: 767px) {
     .provider-requirements{
@@ -81,6 +83,21 @@
     .provider-requirements__body{
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px 25px;
+    }
+    .provider-requirements--about .provider-requirements__item{
+        display: flex;
+        align-items: center;
+    }
+    .provider-requirements--about .provider-requirements__icon{
+        background-image: url("../img/provider-requirements-ok.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 24px;
+        background-color: transparent;
+        margin-right: 10px;
+    }
+    .provider-requirements--about .provider-requirements__icon svg{
+        display: none;
     }
 }
 
