@@ -72,6 +72,9 @@
     }
 }
 @media (max-width: 767px) {
+    .dobrotsen-page--about{
+        margin-bottom: 20px;
+    }
     .dobrotsen-page__subtitle{
         font-size: 16px;
         line-height: 24px;

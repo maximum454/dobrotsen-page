@@ -83,19 +83,22 @@
     }
     .provider-requirements__body{
         grid-template-columns: 1fr 1fr;
-        grid-gap: 20px 25px;
+        grid-gap: 20px 10px;
     }
     .provider-requirements--about .provider-requirements__item{
         display: flex;
-        align-items: center;
+        align-items: self-start;
     }
     .provider-requirements--about .provider-requirements__icon{
         background-image: url("../img/provider-requirements-ok.svg");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 24px;
+        background-size: 100%;
         background-color: transparent;
         margin-right: 10px;
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
     }
     .provider-requirements--about .provider-requirements__icon svg{
         display: none;

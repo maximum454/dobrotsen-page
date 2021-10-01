@@ -65,7 +65,7 @@
 <body>
 <div class="content">
     <div class="wrapper">
-        <!--<section class="dobrotsen-page dobrotsen-page--about">
+        <section class="dobrotsen-page dobrotsen-page--about">
             <div class="dobrotsen-page__body">
                 <div class="dobrotsen-page__txt">
                     <h1 class="h1">О компании</h1>
@@ -313,7 +313,7 @@
                 </div>
             </div>
         </div>
-    -->
+
         <div class="main-advantages">
             <div class="main-advantages__title">3 самых главных<br> преимущества <span>ДОБРОЦЕН</span></div>
             <div class="main-advantages__body">
@@ -377,6 +377,16 @@
         thumbs: {
             swiper: swiperNav,
         },
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 'auto',
+                spaceBetween: 10,
+            },
+            1024: {
+                slidesPerView: 1,
+            }
+        }
     })
 
     let swiperAdvantages = new Swiper(".swiper-advantages", {
@@ -395,7 +405,7 @@
             },
             // when window width is >= 640px
             640: {
-                slidesPerView: 2.5,
+                slidesPerView: 2.2,
                 spaceBetween: 27
             },
             1024: {

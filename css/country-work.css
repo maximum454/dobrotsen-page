@@ -83,8 +83,11 @@
     .country-work__name{
         font-size: 16px;
     }
-    .country-work__name{
+    .country-work__anons{
         font-size: 12px;
         line-height: 20px;
+    }
+    .country-work__list{
+        margin-bottom: 0;
     }
 }
