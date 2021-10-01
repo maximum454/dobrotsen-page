@@ -76,5 +76,15 @@
         font-size: 16px;
         line-height: 24px;
         margin-bottom: 18px;
+        padding-left: 5px;
+        border-left: 3px solid #EB292F;
+        margin-top: 0;
+    }
+    .dobrotsen-page__txt b{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #333333;
     }
 }
