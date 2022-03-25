@@ -12,3 +12,6 @@ https://maximum454.github.io/dobrotsen-page/brand-our.html
 
 Страница бренда
 https://maximum454.github.io/dobrotsen-page/brand-our-section.html
+
+Страница бренда
+https://maximum454.github.io/dobrotsen-page/brand-our-detail.html
