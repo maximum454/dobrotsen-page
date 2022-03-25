@@ -119,3 +119,57 @@
 .brand-our__btn:hover{
     opacity: .7;
 }
+
+.brand-our__detail-info{
+    margin-bottom: 24px;
+    position: relative;
+}
+.brand-our__detail-info a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2468AC;
+    text-decoration: none;
+}
+.brand-our__detail-logo{
+    position: absolute;
+    top: -30px;
+    right: 0;
+    max-width: 137px;
+}
+.brand-our__tag{
+    position: absolute;
+    top: 0;
+    right: 40px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.brand-our__tag-item{
+    position: relative;
+}
+.brand-our__tag-alert{
+    position: absolute;
+    top: -50px;
+    left: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #333333;
+    padding: 10px 12px;
+    width: 270px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 26px rgba(11, 27, 85, 0.15);
+    border-radius: 2px;
+    z-index: 10;
+    display: none;
+}
+.brand-our__tag-alert.active{
+    display: block;
+}
+.card-image{
+    position: relative;
+}
+
