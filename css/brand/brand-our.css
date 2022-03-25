@@ -1,0 +1,121 @@
+.brand-our{
+    font-family: "Circe", sans-serif;
+}
+.brand-our__banner{
+    margin-bottom: 27px;
+}
+.brand-our__banner img{
+    display: block;
+    -o--o-object-fit: cover;
+   object-fit: cover;
+    -o-object-fit: cover;
+   object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+.brand-our__header{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+.brand-our__header-content{
+    max-width: 785px;
+}
+.brand-our__logo{
+}
+.brand-our__logo img{
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.brand-our__header p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}
+.brand-our__title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #333333;
+}
+.brand-our__body{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(413px, 1fr));
+    grid-gap: 48px;
+}
+.brand-our__item{
+    background-color: #FFE3F9;
+    border: 1px solid rgba(18, 18, 18, 0.12);
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+}
+.brand-our__img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.brand-our__img img{
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+   object-fit: cover;
+}
+.brand-our__txt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.brand-our__content{
+
+}
+.brand-our__name{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 4px;
+}
+.brand-our__anons{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #333333;
+}
+.brand-our__btn{
+    background: transparent;
+    border: 1px solid #333333;
+    border-radius: 2px;
+    display: inline-block;
+    padding: 0 16px;
+    color: #333333;
+    line-height: 38px;
+    white-space: nowrap;
+    cursor: pointer;
+    text-decoration: none;
+}
+.brand-our__btn:hover{
+    opacity: .7;
+}
