@@ -47,7 +47,7 @@
 .brand-our__body{
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(413px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
     grid-gap: 48px;
 }
 .brand-our__item{
@@ -172,4 +172,11 @@
 .card-image{
     position: relative;
 }
-
+@media  (max-width: 767px){
+    .brand-our__body{
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(280px, 1fr));
+        grid-gap: 48px;
+    }
+}
