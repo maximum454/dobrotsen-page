@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Розничный опрос</title>
+    <style>
+        @font-face {
+            font-family: Circe;
+            src: local('Circe'), url(./fonts/Circe-Regular.woff) format("woff");
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Circe;
+            font-weight: bold;
+            src: local('Circe'), url(./fonts/Circe-Bold.woff) format("woff");
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Circe;
+            font-weight: 800;
+            src: local('Circe'), url(./fonts/Circe-ExtraBold.woff) format("woff");
+            font-display: swap;
+        }
+
+        .content {
+            flex-grow: 1;
+            width: 100%;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            position: relative;
+        }
+
+        .wrapper {
+            margin: 0 auto;
+            max-width: 1440px;
+            padding: 0 52px;
+        }
+
+        h1, .h1 {
+            font: bold 32px/40px "Circe", sans-serif;
+            text-align: left;
+            color: #333;
+            margin: 0 0 12px;
+        }
+        @media (max-width: 1023px) {
+            .wrapper {
+                padding: 0 16px;
+            }
+            h1, .h1{
+                font: bold 24px/32px "Circe", sans-serif;
+            }
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="https://dobrotsen.ru/bitrix/cache/css/s1/main_new/template_3e7567946ca5bb3b8a91a9e3481dcc25/template_3e7567946ca5bb3b8a91a9e3481dcc25_v1.css?1654778009392927">
+    <link rel="stylesheet" href="./css/rate_the_store/rate_the_store.css">
+</head>
+<body>
+<div class="content">
+    <div class="wrapper">
+        <div class="rate-the-store">
+            <div class="rate-the-store__header">
+                <h1 class="rate-the-store__title">Оцените заказ</h1>
+                <div class="rate-the-store__subtitle">Спасибо вам за участие в опросе</div>
+                <p>Пожалуйста, заполните эту форму, чтобы помочь<br> улучшить наши магазины</p>
+            </div>
+            <form class="rate-the-store__form" action="">
+                <div class="rate-the-store__personal">
+                    <div class="form-group">
+                        <label class="form-label" for="RATE_CITY">Город</label>
+                        <input id="RATE_CITY" class="form-control" type="text" value="Челябинск">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="RATE_SCORE">Магазин <span>*</span></label>
+                        <select class="form-select" name="RATE_SCORE" id="RATE_SCORE">
+                            <option value="">Интернет магазин</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="RATE_NAME">Имя <span>*</span></label>
+                        <input id="RATE_NAME" class="form-control" type="text" value="">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="RATE_PHONE">Номер телефона <span>*</span></label>
+                        <input id="RATE_PHONE" class="form-control" type="text" value="" placeholder="89110989898">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="RATE_EMAIL">Email</label>
+                        <input id="RATE_EMAIL" class="form-control" type="text" value="" placeholder="">
+                    </div>
+                </div>
+                <div class="rate-the-store__body">
+                    <div class="form-group">
+                        <label class="form-label">С какой вероятностью порекомендуете магазин Доброцен друзьям или знакомым <span>*</span></label>
+                        <div class="radio">
+                            <div class="radio__group">
+                                <input class="radio__input"  checked type="radio" name="radio-recommend" id="radio-recommend1">
+                                <label class="radio__label" for="radio-recommend1">1</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-recommend" id="radio-recommend2">
+                                <label class="radio__label" for="radio-recommend2">2</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-recommend" id="radio-recommend3">
+                                <label class="radio__label" for="radio-recommend3">3</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-recommend" id="radio-recommend4">
+                                <label class="radio__label" for="radio-recommend4">4</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-recommend" id="radio-recommend5">
+                                <label class="radio__label" for="radio-recommend5">5</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-recommend" id="radio-recommend6">
+                                <label class="radio__label" for="radio-recommend6">6</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-recommend" id="radio-recommend7">
+                                <label class="radio__label" for="radio-recommend7">7</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-recommend" id="radio-recommend8">
+                                <label class="radio__label" for="radio-recommend8">8</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-recommend" id="radio-recommend9">
+                                <label class="radio__label" for="radio-recommend9">9</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-recommend" id="radio-recommend10">
+                                <label class="radio__label" for="radio-recommend10">10</label>
+                            </div>
+
+                        </div>
+                        <small class="form-small">1 = Категорически не рекомендую, 10 = Обязательно порекомендую</small>
+                    </div>
+
+                    <h2 class="rate-the-store__h2">Оцените:</h2>
+
+                    <div class="form-group">
+                        <label class="form-label">Чистота и порядок в магазине</label>
+                        <div class="radio">
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-clear" id="radio-clear1">
+                                <label class="radio__label" for="radio-clear1">1</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" checked type="radio" name="radio-clear" id="radio-clear2">
+                                <label class="radio__label" for="radio-clear2">2</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-clear" id="radio-clear3">
+                                <label class="radio__label" for="radio-clear3">3</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-clear" id="radio-clear4">
+                                <label class="radio__label" for="radio-clear4">4</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-clear" id="radio-clear5">
+                                <label class="radio__label" for="radio-clear5">5</label>
+                            </div>
+                        </div>
+                        <small class="form-small">1 = Очень грязно, 5 = Очень чисто</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Выкладка товара и наличие ценников</label>
+                        <div class="radio">
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-layout" id="radio-layout1">
+                                <label class="radio__label" for="radio-layout1">1</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-layout" id="radio-layout2">
+                                <label class="radio__label" for="radio-layout2">2</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" checked type="radio" name="radio-layout" id="radio-layout3">
+                                <label class="radio__label" for="radio-layout3">3</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-layout" id="radio-layout4">
+                                <label class="radio__label" for="radio-layout4">4</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-layout" id="radio-layout5">
+                                <label class="radio__label" for="radio-layout5">5</label>
+                            </div>
+                        </div>
+                        <small class="form-small">1 = Ценников почти нет, выгладка ужасна, 5 = Ценники на местах, удобная выкладка</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Доброжелательность персонала</label>
+                        <div class="radio">
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-benevolence" id="radio-benevolence1">
+                                <label class="radio__label" for="radio-benevolence1">1</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-benevolence" id="radio-benevolence2">
+                                <label class="radio__label" for="radio-benevolence2">2</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-benevolence" id="radio-benevolence3">
+                                <label class="radio__label" for="radio-benevolence3">3</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" checked type="radio" name="radio-benevolence" id="radio-benevolence4">
+                                <label class="radio__label" for="radio-benevolence4">4</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-benevolence" id="radio-benevolence5">
+                                <label class="radio__label" for="radio-benevolence5">5</label>
+                            </div>
+                        </div>
+                        <small class="form-small">1 = Персонал недоброжелателен, 5 = Очень компитентный персонал</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Быстроту обслуживания на кассе</label>
+                        <div class="radio">
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-service" id="radio-service1">
+                                <label class="radio__label" for="radio-service1">1</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-service" id="radio-service2">
+                                <label class="radio__label" for="radio-service2">2</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-service" id="radio-service3">
+                                <label class="radio__label" for="radio-service3">3</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" type="radio" name="radio-service" id="radio-service4">
+                                <label class="radio__label" for="radio-service4">4</label>
+                            </div>
+                            <div class="radio__group">
+                                <input class="radio__input" checked type="radio" name="radio-service" id="radio-service5">
+                                <label class="radio__label" for="radio-service5">5</label>
+                            </div>
+                        </div>
+                        <small class="form-small">1 = Длинная очередь, ждал больше 10 минут, 5 = Очень быстрое обслуживание</small>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-title">Что вам понравилось?</div>
+                        <div class="form-subtitle">Выберите один или несколько пунктов</div>
+                        <div class="checkbox form-checkbox">
+                            <input type="checkbox" class="checkbox-input" id="RATE_LIKE1">
+                            <label for="RATE_LIKE1" class="checkbox-label">Удобное расположение магазина</label>
+                        </div>
+                        <div class="checkbox form-checkbox">
+                            <input type="checkbox" class="checkbox-input" checked="" id="RATE_LIKE2">
+                            <label for="RATE_LIKE2" class="checkbox-label">Удобное график работы</label>
+                        </div>
+                        <div class="checkbox form-checkbox">
+                            <input type="checkbox" class="checkbox-input" checked="" id="RATE_LIKE3">
+                            <label for="RATE_LIKE3" class="checkbox-label">Скорость обслуживания</label>
+                        </div>
+                        <div class="checkbox form-checkbox">
+                            <input type="checkbox" class="checkbox-input"  id="RATE_LIKE4">
+                            <label for="RATE_LIKE4" class="checkbox-label">Вежливость и компитентность сотрудников</label>
+                        </div>
+                        <div class="checkbox form-checkbox">
+                            <input type="checkbox" class="checkbox-input"  id="RATE_LIKE5">
+                            <label for="RATE_LIKE5" class="checkbox-label">Чистота и уют в магазине</label>
+                        </div>
+                        <div class="checkbox form-checkbox">
+                            <input type="checkbox" class="checkbox-input" checked="" id="RATE_LIKE6">
+                            <label for="RATE_LIKE6" class="checkbox-label">Магазин легко найти</label>
+                        </div>
+                        <div class="checkbox form-checkbox">
+                            <input type="checkbox" class="checkbox-input"  id="RATE_LIKE7">
+                            <label for="RATE_LIKE7" class="checkbox-label">Большой ассортимент товаров</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="RATE_MESSAGE">Предложения и пожелания</label>
+                        <textarea class="form-control" name="RATE_MESSAGE" id="RATE_MESSAGE" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="rate-the-store__footer">
+                    <div class="form-group ">
+                        <div class="checkbox form-checkbox">
+                        <input type="checkbox" class="checkbox-input" checked="" id="RATE_PRIVACY">
+                        <label for="RATE_PRIVACY" class="checkbox-label">Я&nbsp;принимаю условия &laquo;<a href="/ishop/privacy-policy/">Политики
+                            конфиденциальности
+                            и&nbsp;обработки персональных данных</a>&raquo; и&nbsp;даю согласие на&nbsp;обработку
+                            сведений обо мне,
+                            содержащих мои персональные данные.</label>
+                    </div>
+                        <div class="checkbox form-checkbox">
+                        <input type="checkbox" class="checkbox-input" id="RATE_SUBSCRIBLE">
+                        <label for="RATE_SUBSCRIBLE" class="checkbox-label">Я&nbsp;хочу получать рассылку новостей и&nbsp;выгодных спецпредложений</label>
+                    </div>
+                    </div>
+
+                    <div class="form-group">
+                        <!--Тут reCAPTCHA-->
+                    </div>
+
+                    <input class="form-btn red-btn" type="submit" name="" value="Отправить">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://dobrotsen.ru/local/templates/main_new/js/jquery-3.4.1.min.js"></script>
+<script src="https://dobrotsen.ru/bitrix/cache/js/s1/main_new/template_aecc41171d4946ad4a18c5891e269ac8/template_aecc41171d4946ad4a18c5891e269ac8_v1.js?1654777306412860"></script>
+</body>
+</html>
