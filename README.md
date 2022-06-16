@@ -15,3 +15,6 @@ https://maximum454.github.io/dobrotsen-page/brand-our-section.html
 
 Страница бренда детальная
 https://maximum454.github.io/dobrotsen-page/brand-our-detail.html
+
+Страница Оцените работу магазина
+https://maximum454.github.io/dobrotsen-page/rate_the_store.html
